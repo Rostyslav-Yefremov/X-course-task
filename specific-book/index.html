@@ -5,31 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS BAND STORE 1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/specific-book/styles.css">
 </head>
 <body>
-    <header>
-        <nav><h1>JS BAND STORE / Your full name</h1> 
-            <img src="/images/cart.svg" width="40px" height="40px" alt="cart">
-            <button type="submit">Sing-Out</button>
-            <img src="/images/avatar.png" width="40px" alt="user-avatar">
-            <span>TestUser</span>
-        </nav>
+    <header class="header">
+        <div class="header-container">
+            <h1 class="header-title"><a href="/specific-book/index.html">JS BAND STORE / Rostyslav Yefremov</a></h1> 
+            <div class="header-box">
+            <a class="link-header" href="/"><img src="/images/cart.svg" width="40px" height="40px" alt="cart"></a>
+            <button class="button-sing" type="submit">Sing-Out</button>
+            <a class="link-header" href="/"><img src="/images/avatar.png" width="40px" alt="user-avatar"><span class="username-box" >Username</span></a>
+            </div>
+        </div>
     </header>
-    <hr>
+    
     <main>
-        <img src="/images/books/angular_up_and_running.jpg" alt="book">
-        <p><b>Book name:</b> Angular Up &#38; Running</p>
-        <p><b>Book author:</b> Shyam Seshadri</p>
-        <p><b>Book level:</b> Middle</p>
-        <p><b>Book tags:</b> core</p>
-        <section>
-        <p>Price, $47.20</p>
-        <label for="count">Count</label>
-        <input type="number" id="count">
-        <p>Total price 47.20</p>
-        <button type="submit">Add to cart</button>
-        </section>
-        <p><b>Description:</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, autem!</p>
+        <section class="specific-book">
+            <div class="book-container">
+            <div class="book-block">
+        <img src="/images/books/angular_up_and_running.jpg" width="300px" alt="book">
+        <p class="deskription-book"><span class="text-book">Book description:</span> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, dicta!</p> 
+        </div>
+        <div class="book-block">
+        <p> <span class="text-book">Book name:</span> Angular Up &#38; Running</p>
+        <p> <span class="text-book">Book author:</span> Shyam Seshadri</p>
+        <p> <span class="text-book">Book level:</span> Middle</p>
+        <p> <span class="text-book">Book tags:</span> core</p>
+        </div>
+        </div>
+        <article class="price-block">
+        <ul class="price-list">
+        <li class="price-item"><span class="text-book">Price, $</span><span> 47.20</span></li>
+        <li class="price-item">
+            <div><label for="count"><span class="text-book">Count</span></label></div>
+            <div><input type="number" id="count" min="0" value="0"></div>
+        </li>
+        <li class="price-item"><span class="text-book">Total price</span><span>47.20</span></li>
+        </ul>
+        <div class="button-price">
+            <button class="button-sing" type="submit">Add to cart</button>
+            </div>
+       </article>
+     </section>
     </main>
 
     <a href="/signin/index.html">НА ГОЛОВНУ</a>

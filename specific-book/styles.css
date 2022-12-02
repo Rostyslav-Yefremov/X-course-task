@@ -1,0 +1,125 @@
+/* Глобальные стили */
+/* * {
+  margin: 0;
+} */
+:root {
+  --main-font: 'Roboto', 'Arial', 'Helvetica', sans-serif;
+  --title-color: #212121;
+}
+
+body {
+  font-family: var(--main-font);
+  color: var(--title-color);
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Хэдер */
+
+.header {
+  border-bottom: 1px solid #ececec;
+  background-color: #f2f3f6;
+  box-shadow: 0px 1px 1px rgb(0 0 0 / 15%);
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.header-title {
+  font-size: 24px;
+}
+
+.header-box {
+  display: flex;
+  align-items: center;
+}
+
+.link-header {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.username-box {
+  margin-left: 10px;
+  font-weight: 500;
+}
+
+.button-sing {
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 16px;
+  width: 120px;
+  height: 40px;
+  border-radius: 20px;
+  border: 1px solid rgb(173, 171, 171);
+  box-shadow: 0px 1px 1px rgb(0 0 0 / 15%);
+  margin-left: 10px;
+  background-color: #e6e8ee;
+}
+
+/* Секция отдельной книги */
+
+.specific-book {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.book-container {
+  display: flex;
+  /* border: 1px solid green; */
+}
+
+.deskription-book {
+  width: 300px;
+}
+
+.book-block:last-child {
+  margin-left: 30px;
+}
+
+.text-book {
+  font-weight: bold;
+}
+
+/* Блок с ценой книги */
+
+.price-block {
+  height: fit-content;
+  padding: 16px;
+  outline: 1px dashed darkgray;
+}
+
+.price-list {
+  padding: 0;
+  margin: 0;
+}
+
+.price-item {
+  display: flex;
+  justify-content: space-between;
+  min-width: 300px;
+  margin-bottom: 10px;
+}
+
+#count {
+  width: 50px;
+  border-radius: 4px;
+  border-color: darkgray;
+  text-align: center;
+}
+
+.button-price {
+  display: flex;
+  justify-content: flex-end;
+  /* margin: 0 30px; */
+}
