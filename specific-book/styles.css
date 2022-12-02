@@ -1,11 +1,10 @@
-/* Глобальные стили */
-/* * {
-  margin: 0;
-} */
+/* Переменные */
 :root {
   --main-font: 'Roboto', 'Arial', 'Helvetica', sans-serif;
   --title-color: #212121;
 }
+
+/* Глобальные стили */
 
 body {
   font-family: var(--main-font);
@@ -17,6 +16,10 @@ body {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+ul {
+  list-style: none;
 }
 
 /* Хэдер */
@@ -53,7 +56,7 @@ a {
   font-weight: 500;
 }
 
-.button-sing {
+.button {
   font-family: var(--main-font);
   font-weight: 500;
   font-size: 16px;
@@ -62,8 +65,69 @@ a {
   border-radius: 20px;
   border: 1px solid rgb(173, 171, 171);
   box-shadow: 0px 1px 1px rgb(0 0 0 / 15%);
-  margin-left: 10px;
   background-color: #e6e8ee;
+}
+
+.button-singout {
+  margin-left: 10px;
+}
+
+.button:hover {
+  background-color: rgba(36, 54, 92, 0.801);
+  color: #f2f3f6;
+  cursor: pointer;
+}
+
+/* Секция авторизации */
+
+.section-login {
+  display: flex;
+  justify-content: center;
+  margin: 100px 0 0;
+  text-align: center;
+}
+
+.input-login {
+  font-size: 14px;
+  text-align: center;
+  width: 200px;
+  height: 38px;
+  border-radius: 20px;
+  border: 1px solid rgb(173, 171, 171);
+  box-shadow: 0px 1px 1px rgb(0 0 0 / 15%);
+  background-color: #ffffff;
+  padding: 0;
+}
+
+.container-login {
+  padding: 15px;
+}
+
+.list-login {
+  padding: 0;
+  margin: 10px 0 0;
+}
+
+.item-login:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.username-login {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.button-signin {
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 16px;
+  width: 202px;
+  height: 40px;
+  border-radius: 20px;
+  border: 1px solid rgb(173, 171, 171);
+  box-shadow: 0px 1px 1px rgb(0 0 0 / 15%);
+  background-color: #e6e8ee;
+  padding: 0;
 }
 
 /* Секция отдельной книги */
@@ -76,10 +140,9 @@ a {
 
 .book-container {
   display: flex;
-  /* border: 1px solid green; */
 }
 
-.deskription-book {
+.description-book {
   width: 300px;
 }
 
@@ -121,5 +184,4 @@ a {
 .button-price {
   display: flex;
   justify-content: flex-end;
-  /* margin: 0 30px; */
 }

@@ -5,22 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS BAND STORE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./specific-book/styles.css">
 </head>
 <body>
-    <header><h1>JS BAND STORE / Your full name</h1></header>
-    <hr>
+    <header class="header">
+        <div class="header-container">
+            <h1 class="header-title"><a href="./index.html">JS BAND STORE / Rostyslav Yefremov</a></h1> 
+            <!-- <div class="header-box">
+            <a class="link-header" href="/"><img src="../images/cart.svg" width="40px" height="40px" alt="cart"></a>
+            <button class="button" type="submit">Sing-Out</button>
+            <a class="link-header" href="/"><img src="./images/user-avatar.png" width="40px" alt="user-avatar"><span class="username-box" >Username</span></a>
+            </div> -->
+        </div>
+    </header>
     <main>
-        <img src="./images/avatar.png" width="200px" height="200px" alt="user-avatar">
+        <section class="section-login">
+            <div class="container-login">
+        <img src="./images/user-avatar.png" width="200px" height="200px" alt="user-avatar">
         <form action="/" method="post">
-            <label for="name">Username</label>
-            
-           <div> 
-            <input type="text" id="name" name="username" placeholder="type Username">
-            </div>
-            <button type="submit">Sign-in</button>
-            
+            <ul class="list-login">
+                <li class="item-login">
+            <label for="name"><span class="username-login">Username</span></label>
+            </li>
+           <li class="item-login">
+            <input class="input-login" type="text" id="name" name="username" placeholder="type Username">
+            </li>
+            <li class="item-login">
+            <button class="button button-signin" type="submit">Sign-in</button>
+        </li>    
+        </ul>
         </form>
-
+        </div>
+</section>
         
     </main>
     
