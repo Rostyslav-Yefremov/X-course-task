@@ -138,7 +138,7 @@ ul {
   padding: 20px;
 }
 
-.book-container {
+.book-section {
   display: flex;
 }
 
@@ -156,7 +156,7 @@ ul {
 
 /* Блок с ценой книги */
 
-.price-block {
+.price-section {
   height: fit-content;
   padding: 16px;
   outline: 1px dashed darkgray;
