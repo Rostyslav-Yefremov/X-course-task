@@ -1,0 +1,116 @@
+/* Переменные */
+:root {
+  --main-font: 'Roboto', 'Arial', 'Helvetica', sans-serif;
+  --title-color: #212121;
+}
+
+/* Глобальные стили */
+
+body {
+  font-family: var(--main-font);
+  color: var(--title-color);
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Хэдер */
+
+.header {
+  border-bottom: 1px solid #ececec;
+  background-color: #f2f3f6;
+  box-shadow: 0px 1px 1px rgb(0 0 0 / 15%);
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.header-title {
+  font-size: 24px;
+}
+
+/* Секция авторизации */
+
+.section-login {
+  display: flex;
+  justify-content: center;
+  margin: 100px 0 0;
+}
+
+.input-login {
+  font-size: 14px;
+  text-align: center;
+  width: 200px;
+  height: 40px;
+  border-radius: 20px;
+  border: 1px solid rgb(173, 171, 171);
+  box-shadow: 0px 1px 1px rgb(0 0 0 / 15%);
+  background-color: #ffffff;
+  padding: 0;
+}
+
+.container-login {
+  text-align: center;
+}
+
+.list-login {
+  padding: 0;
+  margin: 10px 0 0;
+}
+
+.item-login:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.username-login {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.button-signin {
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 16px;
+  width: 200px;
+  height: 40px;
+  border-radius: 20px;
+  border: 1px solid rgb(173, 171, 171);
+  box-shadow: 0px 1px 1px rgb(0 0 0 / 15%);
+  background-color: #e6e8ee;
+  padding: 0;
+}
+
+.button-signin:hover {
+  background-color: rgba(36, 54, 92, 0.801);
+  color: #f2f3f6;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 320px) {
+  img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .container-login {
+    width: 100%;
+  }
+
+  .button-signin,
+  .input-login {
+    width: calc(100% - 16px);
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+}
